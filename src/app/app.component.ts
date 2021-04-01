@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tempup';
+  title = 'Calculator App';
+  num1: number;
+  num2: number;
+  result: number;
+  add() {
+      this.result = this.num1 + this.num2;
+  }
+  substract() {
+      this.result = this.num1 - this.num2;
+  }
+  multiply() {
+      this.result = this.num1 * this.num2;
+  }
+  divide() {
+      this.result = this.num1 % this.num2;
+  }
+
 }
+
